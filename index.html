@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        .mycontainer {
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .roboto {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .fredoka {
+            font-family: "Fredoka", sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#FF5C2C",
+                        "secondary": "#938683",
+
+
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="md:mx-auto mycontainer mt-3 px-2">
+    <header class="h-lvh">
+        <!-- navbar -->
+        <nav class="">
+            <div class="flex justify-around lg:justify-between items-center">
+                <!-- logo -->
+                <div class="">
+                    <img class="w-24" src="./img/logo.png" alt="" srcset="">
+                </div>
+                <!-- midnav -->
+                <div class="roboto  hidden lg:block font-bold text-sm" id="navbar-default">
+                    <ul class=" lg:flex gap-5 items-center">
+                        <li><a href="#" class="hover:text-primary">Home</a></li>
+                        <li><a href="" class="flex items-center gap-[2px] hover:text-primary">Pets <svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg></a>
+                        </li>
+                        <li><a href="" class="flex items-center gap-[2px] hover:text-primary">Services <svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg></a>
+                        </li>
+                        <li><a href="" class="hover:text-primary">Products</a></li>
+                        <li><button
+                                class="btn btn-outline rounded-md border-primary text-primary hover:text-white hover:bg-primary hover:border-primary">Become
+                                a
+                                Seller</button></li>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- rightnav -->
+                <div>
+                    <ul class="flex justify-around gap-2 lg:gap-5 items-center">
+                        <li><a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-primary">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                            </a></li>
+                        <li><a href="">
+                                <img src="./img/user.png" alt="" srcset="">
+
+                            </a></li>
+                        <li><a href="" class="text-gray-400 text-xs font-semibold">Log in/ Register</a>
+
+                        </li>
+                        <li class="hidden lg:block"> <button
+                                class="btn btn-active bg-primary roboto bg-[primary] text-white "><img
+                                    src="./img/Polygon 1.png" alt="" srcset="" class="bg-white p-1 rounded-lg"> How it
+                                Works</button>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- toggle div -->
+                <div class=" lg:hidden relative">
+                    <button class="btn btn-ghost btn-circle" id="toggle_button" onclick="togglemenu()"
+                        ondblclick="myFunction()">
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                    <!-- dropdown -->
+                    <div class="roboto font-bold hidden text-sm absolute right-1 bg-slate-200 p-2 rounded-lg bg-opacity-40"
+                        id="navbar">
+                        <ul class="space-y-3 gap-5 items-center ">
+                            <li><a href="#" class="hover:text-primary">Home</a></li>
+                            <li><a href="" class="flex items-center gap-[2px] hover:text-primary">Pets <svg
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                    </svg></a>
+                            </li>
+                            <li><a href="" class="flex items-center gap-[2px] hover:text-primary">Services <svg
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                    </svg></a>
+                            </li>
+                            <li><a href="" class="hover:text-primary">Products</a></li>
+                            <li><button
+                                    class="btn btn-outline rounded-md border-primary text-primary hover:text-white hover:bg-primary hover:border-primary">Become
+                                    a
+                                    Seller</button></li>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="mt-10">
+            <div class="flex flex-col gap-5 lg:flex-row justify-center lg:justify-around items-center">
+                <div class="space-y-6 text-center lg:text-left">
+                    <h1 class="fredoka text-4xl lg:text-6xl font-bold tracking-[4px]">
+                        Established & <br>
+                        Trusted Pet <br>
+                        Care Service</h1>
+                    <p class="text-sm text-secondary font-medium"> Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit,<br>
+                        sed do eiusmod tempor incididunt ut labore et dolore <br>
+                        magna aliqua. Ut enim ad minim veniam,</p>
+                    <button class="btn btn-secondary bg-primary px-9 text-white font-bold">Find Now</button>
+                </div>
+                <div class="">
+                    <section class="relative">
+                        <!-- gingar cat image -->
+                        <div class="relative">
+                            <!-- back ground image -->
+
+
+                            <div class="absolute top-0 -right-20 hidden lg:block">
+                                <img class="w-40" src="./img/Group 1000003173.png" alt="">
+                            </div>
+                            <div class=" absolute bottom-0 -left-20 hidden lg:block">
+                                <img class="w-40" src="./img/Group 1000003168.png" alt="">
+                            </div>
+
+                            <!-- -------------------- -->
+                            <div class="bg-[#FFA58A] rounded-md">
+                                <img class="" src="./img/red-white-cat-i-white-studio.png" alt="">
+
+                            </div>
+
+                            <!-- dog div -->
+                            <div class="bg-[#F9A6AC] rounded-md lg:absolute -bottom-8 -right-20 mt-5 lg:mt-0">
+                                <img class="h-56" src="./img/cute-spitz 1.png" alt="" srcset="">
+
+                            </div>
+
+                            <!-- pets food card-->
+
+                            <div
+                                class="shadow-2xl rounded-lg p-4 absolute  lg:-bottom-10 lg:right-10 bg-slate-50 w-full lg:w-3/5 ">
+                                <div class="space-y-4">
+                                    <div class="flex gap-3">
+                                        <img src="./img/persian_caat.png" alt="" srcset="">
+                                        <div class="">
+                                            <h1 class="text-sm font-semibold">Cat Food</h1>
+                                            <p class="text-sm text-gray-400">Lorem Ipsum</p>
+                                        </div>
+                                    </div>
+                                    <hr class="text-center">
+                                    <div class="flex gap-3">
+                                        <img src="./img/dog.png" alt="">
+                                        <div>
+                                            <h1 class="text-sm font-semibold">Cat Food</h1>
+                                            <p class="text-sm text-gray-400">Lorem Ipsum</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div></div>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <footer>
+
+    </footer>
+    <script>
+        export default {
+            date() {
+                return {
+                    isOpen: false,
+                }
+            },
+        }
+    </script>
+    <script src="./js/toggle.js"></script>
+</body>
+
+</html>
