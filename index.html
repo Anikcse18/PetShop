@@ -188,8 +188,9 @@
                             </div>
 
                             <!-- dog div -->
-                            <div class="bg-[#F9A6AC] rounded-md lg:absolute -bottom-8 -right-20 mt-5 lg:mt-0">
-                                <img class="h-56" src="./img/cute-spitz 1.png" alt="" srcset="">
+                            <div
+                                class="bg-[#F9A6AC] flex lg:flex-none justify-center  rounded-md lg:absolute -bottom-8 -right-20 mt-5 lg:mt-0">
+                                <img class=" h-56 " src="./img/cute-spitz 1.png" alt="" srcset="">
                             </div>
 
                             <!-- pets food card-->
@@ -228,7 +229,7 @@
 
     </header>
 
-    <main class="mt-20">
+    <main class="mt-20 lg:mt-32">
         <!-- features Pet -->
         <section class="">
             <!-- features text -->
@@ -243,7 +244,7 @@
 
             </div>
             <!-- Features Pet -->
-            <div class="flex flex-col lg:flex-row items-center justify-between mt-8">
+            <div class="flex flex-col lg:flex-row items-center justify-evenly lg:-space-x-14 mt-8">
                 <div class="card text-primary-content text-center">
                     <div class="card-body relative">
                         <img src="./img/product_bg_1.png" alt="" srcset="">
@@ -280,12 +281,13 @@
 
         </section>
         <!-- Feature services -->
-        <section class="mt-20">
-            <div class="flex justify-between flex-col lg:flex-row items-center ">
-                <div class="">
-                    <div>
+        <section class="mt-10 lg:mt-40">
+            <div class="flex justify-between flex-col lg:flex-row items-center gap-40">
+                <div class="flex-1">
+                    <div class="text-center lg:text-left">
                         <h1 class="text-3xl fredoka font-semibold">Feature services</h1>
-                        <p class="text-sm text-secondary">Designed so animals can relax & indulge in pet stylists, run
+                        <p class="text-sm text-secondary mt-3">Designed so animals can relax & indulge in pet stylists,
+                            run
                             around
                             our exercise
                             yards, make new
@@ -295,31 +297,27 @@
 
                     <div class="mt-7 grid grid-cols-2 gap-4">
                         <div class="flex gap-4">
-                            <div class="bg-[#7EC1F7] rounded-full w-20 h-16 flex items-center justify-center">
+                            <div class="bg-[#7EC1F7] rounded-full w-20 h-14 flex items-center justify-center">
                                 <img src="./img/Growming.png" alt="" srcset="" class="w-3/5">
                             </div>
                             <div>
                                 <h1 class="fredoka font-semibold text-xl">Grooming</h1>
                                 <p class="text-xs text-secondary">Your pet is in good hands with us!
                                     our center.</p>
-
-
                             </div>
                         </div>
                         <div class="flex gap-4">
-                            <div class="bg-[#FE8E68] rounded-full w-20 h-16 flex items-center justify-center">
+                            <div class="bg-[#FE8E68] rounded-full w-20 h-14 flex items-center justify-center">
                                 <img src="./img/grooming.png" alt="" srcset="" class="w-3/5">
                             </div>
                             <div>
                                 <h1 class="fredoka font-semibold text-xl">Dog Sitting</h1>
                                 <p class="text-xs text-secondary">Your pet is in good hands with us!
                                     our center.</p>
-
-
                             </div>
                         </div>
                         <div class="flex gap-4">
-                            <div class="bg-[#FBB742] rounded-full w-20 h-16 flex items-center justify-center">
+                            <div class="bg-[#FBB742] rounded-full w-20 h-14 flex items-center justify-center">
                                 <img src="./img/traning.png" alt="" srcset="" class="w-3/5">
                             </div>
                             <div>
@@ -331,7 +329,7 @@
                             </div>
                         </div>
                         <div class="flex gap-4">
-                            <div class="bg-[#38C5D9] rounded-full  w-20 h-16 flex items-center justify-center">
+                            <div class="bg-[#38C5D9] rounded-full  w-20 h-14 flex items-center justify-center">
                                 <img src="./img/vetanary.png" alt="" srcset="" class="w-3/5">
                             </div>
                             <div>
@@ -348,10 +346,35 @@
                 </div>
                 <!-- wrong -->
 
-                <div class="p-30 bg-red-600">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum voluptatibus ad expedita
-                        tempora omnis ratione veritatis provident, architecto rem cum eum nihil optio culpa non. Non
-                        quasi sit deserunt aspernatur.</p>
+                <div class="flex-1  relative">
+                    <div class="flex items-end justify-center">
+                        <div class="bg-[#F9A6AC] w-[380px] h-[240px] rounded-lg relative">
+                            <img src="./img/female_with_cat.png" alt="" srcset=""
+                                class="absolute w-3/4 bottom-0 left-[10%]">
+                            <img src="./img/Pattern_right.png" alt="" srcset=""
+                                class="hidden lg:block absolute -right-10 w-10">
+                            <img src="./img/Left_pattern.png" alt="" srcset=""
+                                class="hidden lg:block absolute bottom-0 -left-10 w-10">
+                            <!-- Cart -->
+                            <div
+                                class="w-28 lg:w-32 h-28 lg:h-32 rounded-lg fredoka text-center text-white bg-[#7EC1F7] absolute left-42 lg:-left-20  -top-14 hidden lg:block">
+                                <div
+                                    class="text-center flex flex-col justify-center items-center mt-3 gap-y-3 relative">
+                                    <h1 class="text-2xl font-medium inline-block">50 <span
+                                            class="text-sm -ml-1">+</span>
+                                    </h1>
+                                    <h1 class="font-medium">Service</h1>
+                                    <p class="font-medium text-xs">Aviable</p>
+                                    <div class="absolute -right-16 -top-16">
+                                        <img src="./img/Highlight Effect Line 1.png" alt="" srcset="">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -361,7 +384,7 @@
 
     </footer>
 
-    <script src="./js/toggle.js"></script>
+    <script src=" ./js/toggle.js"></script>
 </body>
 
 </html>
