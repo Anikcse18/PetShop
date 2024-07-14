@@ -18,6 +18,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <!-- swiperjs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <style>
         .mycontainer {
@@ -33,6 +35,8 @@
             font-family: "Fredoka", sans-serif;
         }
     </style>
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
     <script>
         tailwind.config = {
             theme: {
@@ -452,6 +456,99 @@
             </div>
 
         </section>
+
+        <!-- Shop by pet -->
+        <section class="mt-32 lg:mt-40">
+            <div class="max-w-[600px] mx-auto">
+                <h1 class="text-3xl fredoka font-semibold text-center">Listing With Us </h1>
+                <p class="text-center text-sm mt-2 text-secondary "> Designed so animals can relax & indulge in pet
+                    stylists, run around our exercise yards, make new friends in doggy daycare, or simply spend hours in
+                    our dog grooming salon.</p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row justify-evenly gap-8 lg:gap-0 lg:-space-x-32 mt-10 items-center">
+                <div class="text-center">
+                    <div class="w-[100px] h-[80px] rounded-full bg-[#FF5C2C] flex justify-center items-center">
+                        <img src="./img/Dog_icon.png" alt="" srcset="" class="w-1/2">
+                    </div>
+                    <h1 class="fredoka text-xl font-semibold hover:text-[#61D5DF]">Dog</h1>
+                </div>
+                <div class="text-center">
+                    <div class="w-[100px] h-[80px] rounded-full bg-[#FFA58A] flex justify-center items-center">
+                        <img src="./img/cat.png" alt="" srcset="" class="w-1/2">
+                    </div>
+                    <h1 class="fredoka text-xl font-semibold hover:text-[#61D5DF]">Cat</h1>
+                </div>
+                <div class="text-center">
+                    <div class="w-[100px] h-[80px] rounded-full bg-[#F9A6AC] flex justify-center items-center">
+                        <img src="./img/Birds_Icon.png" alt="" srcset="" class="w-1/2">
+                    </div>
+                    <h1 class="fredoka text-xl font-semibold hover:text-[#61D5DF]">Birds</h1>
+                </div>
+                <div class="text-center">
+                    <div class="w-[100px] h-[80px] rounded-full bg-[#C2E0FA] flex justify-center items-center">
+                        <img src="./img/Rabbit_icon.png" alt="" srcset="" class="w-1/2">
+                    </div>
+                    <h1 class="fredoka text-xl font-semibold hover:text-[#61D5DF]">Rabbits</h1>
+                </div>
+                <div class="text-center">
+                    <div class="w-[100px] h-[80px] rounded-full bg-[#7EC1F7] flex justify-center items-center">
+                        <img src="./img/Fish_icon.png" alt="" srcset="" class="w-1/2">
+                    </div>
+                    <h1 class="fredoka text-xl font-semibold hover:text-[#61D5DF]">Fish</h1>
+                </div>
+                <div class="text-center">
+                    <div class="w-[100px] h-[80px] rounded-full bg-[#61D5DF] flex justify-center items-center">
+                        <img src="./img/Reptile_icon.png" alt="" srcset="" class="w-1/2">
+                    </div>
+                    <h1 class="fredoka text-xl font-semibold hover:text-[#61D5DF]">Reptile</h1>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Most Popular breed section -->
+        <section class="mt-32 lg:mt-40">
+            <div class=" max-w-[600px] mx-auto">
+                <h1 class="text-3xl fredoka font-semibold text-center">The Most Popular Breeds</h1>
+                <p class="text-center text-sm mt-2 text-secondary "> Designed so animals can relax & indulge in pet
+                    stylists, run around our exercise yards, make new friends in doggy daycare, or simply spend hours in
+                    our dog grooming salon.</p>
+            </div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/Slider_1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/Slider_2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/Slider_3.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/Slider_1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/Slider_2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/Slider_3.png" />
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./img/Slider_3.png" />
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+
+        </section>
+
+
     </main>
 
     <footer>
@@ -459,6 +556,28 @@
     </footer>
 
     <script src=" ./js/toggle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
 </body>
 
 </html>
