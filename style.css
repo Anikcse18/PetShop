@@ -1,17 +1,39 @@
-.swiper {
+/* The Most Popular Breeds */
+#breed .swiper {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.swiper-slide {
+#breed .swiper-slide {
   background-position: center;
   background-size: cover;
   width: 300px;
   height: auto;
 }
 
-.swiper-slide img {
+#breed .swiper-slide img {
   display: block;
   width: 100%;
+}
+
+/* Perfect service */
+
+#services .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+#services .swiper .swiper-slide {
+  /* text-align: center; */
+  font-size: 18px;
+  /* background: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 40px;
 }

@@ -1,31 +1,21 @@
-<div class="flex-1">
-                    <div class=" h-full w-full relative">
-                        <div class=" bg-[#F9A6AC] lg:w-[458px] w-[300px] h-[280px] lg:h-[350px] rounded-lg relative">
-                            <img src="./img/Pattern_right.png" alt="" srcset=""
-                                class="hidden lg:block absolute -right-10 w-10">
-                            <img src="./img/Left_pattern.png" alt="" srcset=""
-                                class="hidden lg:block absolute bottom-0 -left-10 w-10">
-                            <!-- Cart -->
-                            <div
-                                class="w-28 lg:w-32 h-28 lg:h-32 rounded-lg fredoka text-center text-white bg-[#7EC1F7] absolute left-42 lg:-left-20  -top-14">
-                                <div
-                                    class="text-center flex flex-col justify-center items-center mt-3 gap-y-3 relative">
-                                    <h1 class="text-2xl font-medium inline-block">50 <span
-                                            class="text-sm -ml-1">+</span>
-                                    </h1>
-                                    <h1 class="font-medium">Service</h1>
-                                    <p class="font-medium text-xs">Aviable</p>
-                                    <div class="absolute -right-16 -top-16">
-                                        <img src="./img/Highlight Effect Line 1.png" alt="" srcset="">
-                                    </div>
-                                </div>
+<div class="flex flex-col lg:flex-row justify-evenly items-center">
 
-
-                            </div>
-                            <img src="./img/female_with_cat.png" alt="" srcset=""
-                                class="lg:w-[361px] w-[250px] lg:h-[487px] h-[380px] absolute bottom-0 left-[8%] lg:left-[10%]">
-                        </div>
-
-                    </div>
+                <div class="w-[230px] h-[280px] rounded-full  flex items-center justify-center relative bg-[#38C5D9]">
+                    <img src="./img/Dog_with_girl_3.png" alt="" srcset=""
+                        class="absolute -top-8 right-1 rounded-b-full w-[98%]">
 
                 </div>
+                <div>
+                    <div class="max-w-[520px] space-y-5 relative ">
+                        <h1 class="text-3xl text-center lg:text-left fredoka font-semibold">Perfect Services</h1>
+                        <p class="text-sm mt-2 text-secondary "> The breeder we worked with was very knowledgeable and
+                            patient with our questions. Both of us were eager to ensure our puppy would be a good
+                            match.The AKC Marketplace is hands down the best resource available to find quality breeders
+                            best resource available to find quality breeders</p>
+
+                        <h1 class="font-bold text-sm ">. ......... Ripon Khan</h1>
+                        <img src="./img/quots.png" alt="" srcset="" class="absolute -top-14 -left-16">
+                    </div>
+                </div>
+
+            </div>
