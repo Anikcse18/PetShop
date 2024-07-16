@@ -1,21 +1,71 @@
-<div class="flex flex-col lg:flex-row justify-evenly items-center">
+<section class="mt-32 lg:mt-40">
+<div class="max-w-[420px] mx-auto">
+    <h1 class="text-3xl fredoka font-semibold text-center">Listing With Us </h1>
+    <p class="text-center text-sm mt-2 text-secondary "> List your services or products and connect with new
+        customers around the world</p>
+</div>
 
-                <div class="w-[230px] h-[280px] rounded-full  flex items-center justify-center relative bg-[#38C5D9]">
-                    <img src="./img/Dog_with_girl_3.png" alt="" srcset=""
-                        class="absolute -top-8 right-1 rounded-b-full w-[98%]">
+<div class="flex flex-col-reverse lg:flex-row lg:justify-evenly gap-10 lg:-space-x-40 mt-10 lg:mt-40">
 
-                </div>
-                <div>
-                    <div class="max-w-[520px] space-y-5 relative ">
-                        <h1 class="text-3xl text-center lg:text-left fredoka font-semibold">Perfect Services</h1>
-                        <p class="text-sm mt-2 text-secondary "> The breeder we worked with was very knowledgeable and
-                            patient with our questions. Both of us were eager to ensure our puppy would be a good
-                            match.The AKC Marketplace is hands down the best resource available to find quality breeders
-                            best resource available to find quality breeders</p>
+    <div class="text-center order-1">
+        <h1 class="fredoka font-semibold text-xl ">Puppies</h1>
+        <p class="text-sm mt-2 text-secondary  mx-auto max-w-[250px] text-center"> List your
+            services or products
+            and
+            connect with
+            new
+            customers around the world</p>
+        <p class="font-semibold text-gray-600 text-xs mt-2 ">If you are a Breeder <span
+                class="text-[#61D5DF]">Create
+                Listing</span></p>
 
-                        <h1 class="font-bold text-sm ">. ......... Ripon Khan</h1>
-                        <img src="./img/quots.png" alt="" srcset="" class="absolute -top-14 -left-16">
-                    </div>
-                </div>
+    </div>
 
-            </div>
+    <div class="order-2">
+
+        <div
+            class="bg-[#F9A6AC] w-[280px] lg:h-[220px] h-[200px] mx-auto lg:mx-0 mt-8 lg:mt-2 rounded-lg relative">
+            <img src="./img/Black_White_cat.png" alt="" srcset=""
+                class="absolute w-1/2 lg:w-4/6 bottom-0 left-[25%] lg:left-[15%]">
+
+
+
+            <img src="./img/black_white_car_right.png" alt="" srcset="" class="absolute -top-20 w-1/2 -right-20
+            -80">
+
+            <img src="./img/:black_white_car_left.png" alt="" srcset="" class="absolute -bottom-20 w-1/2 -left-20
+            -80">
+        </div>
+
+
+        <div class="text-center mt-7">
+            <h1 class="fredoka font-semibold text-xl ">Groomers</h1>
+            <p class="text-sm mt-2 text-secondary mx-auto max-w-[250px]"> List your
+                services or
+                products
+                and
+                connect with
+                new
+                customers around the world</p>
+            <p class="font-semibold text-gray-600 text-xs mt-2 ">If you are a Breeder <span
+                    class="text-[#61D5DF]">Create
+                    Listing</span></p>
+
+        </div>
+    </div>
+
+
+    <div class="text-center order-3 ">
+        <h1 class="fredoka font-semibold text-xl ">Trainers</h1>
+        <p class="text-sm mt-2 text-secondary mx-auto max-w-[250px]"> List your services or products and
+            connect with
+            new
+            customers around the world</p>
+        <p class="font-semibold text-gray-600 text-xs mt-2 ">If you are a Breeder <span
+                class="text-[#61D5DF]">Create
+                Listing</span></p>
+
+    </div>
+</div>
+
+</section>
